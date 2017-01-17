@@ -1,0 +1,123 @@
+<div ng-controller="mainController" >
+  <div class="row">
+    <!--home page  -->
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" id="main">
+        <!-- <h2 class="bgForm">BackGround Form</h2><br><br> -->
+          <form class="form-horizontal">
+            <h2 class="settings"><strong>Settings</strong></h2>
+          <div class="form-group ">
+            <label for="selCompany" class="col-sm-5 control-label">Select Client:</label>
+            <select class="form-control selCom" ng-model="mySelect" id="selCompany" ng-change="bgUpdate(mySelect)">
+             <option>Google</option>
+             <option>Facebook</option>
+             <option>Microsoft</option>
+           </select>
+          </div>
+          <div class="form-group">
+            <label for="BackGroundColor" class="col-sm-5 control-label">BackGround Color:</label>
+            <div class="col-sm-7">
+              <input type="color" value="#ff0000" class="form-control" ng-model="bgColor" id="BackGroundColor">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="logoBackGroundColor" class="col-sm-5 control-label">Header BackGroundColor:</label>
+            <div class="col-sm-7">
+              <input type="color" value="#ff0000" class="form-control" ng-model="lgColor" id="logoBackGroundColor">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textColor" class="col-sm-5 control-label">Text Color:</label>
+            <div class="col-sm-7">
+              <input type="color" value="#ff0000" class="form-control" ng-model="txtColor" id="textColor">
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <label for="headerText" class="col-sm-5 control-label">Header:</label>
+            <div class="col-sm-7">
+              <input type="text" maxlength="30" class="form-control" ng-model="hText" id="headerText" placeholder="Enter header text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="logoImage" class="col-sm-5 control-label">Logo Image <img src="images/ios-info.png" title="96px X 96px"></label>
+            <div class="col-sm-7 fileinput fileinput-new" data-provides="fileinput">
+              <span class="btn btn-default btn-file">
+                   <span>Browse Image</span>
+                   <span file-input="file" on-change="readLogoFile()"></span>
+              </span>
+             <!-- <span class="fileinput-filename logo">{{logoSrc}}</span> -->
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="backGroundImage" class="col-sm-5 control-label">BackGround Image <img src="images/ios-info.png"  title="320px X 480px"></label>
+            <div class="col-sm-7 fileinput fileinput-new" data-provides="fileinput">
+              <span class="btn btn-default btn-file">
+      			       <span>Browse Image</span>
+      			       <span file-input="file" on-change="readFile()"></span>
+      		    </span>
+             <!-- <span class="fileinput-filename imgBG">{{imageSrc}}</span> -->
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-5 col-sm-6">
+              <button ng-click="savePreview()" class="btn btn-primary submit-button">Save</button>
+              <!-- <button type="submit" class="btn btn-default" ng-click="reset()">Reset</button> -->
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- empty div for spacing -->
+     
+      <!-- main page -->
+      
+      <div class="col-xs-offset-1 col-xs-6" id="home" ng-show="homePreview">
+      <!-- <div>{{dataJson}}</div> -->
+          <div id="display">
+              <!-- <h2><strong>Preview</strong></h2> -->
+            <header class="row rheader" style="background:{{lgColor}};" >
+              <a href="#">
+                <span><img src="images/ios-back.png" alt="Company image"></span>
+              </a>
+              <div id="headerImage">
+                <h2>{{hText}}</h2>
+              </div>
+              
+            </header>
+            <div class="previewDiv row" style="background:{{bgColor}};">
+             <img ng-src="{{logoSrc}}" class="img-rounded logoImage" alt="Company image">
+              <!-- <div class="list-group">
+                <a class="list-group-item">
+                  <h4 class="list-group-item-heading" style="color:{{txtColor}};">First List Group Item Heading</h4>
+                  <p class="list-group-item-text" style="color:{{txtColor}};">List Group Item Text</p>
+                </a>
+                <a class="list-group-item">
+                  <h4 class="list-group-item-heading" style="color:{{txtColor}};">Second List Group Item Heading</h4>
+                  <p class="list-group-item-text" style="color:{{txtColor}};">List Group Item Text</p>
+                </a>
+                <a class="list-group-item">
+                  <h4 class="list-group-item-heading" style="color:{{txtColor}};">Third List Group Item Heading</h4>
+                  <p class="list-group-item-text" style="color:{{txtColor}};">List Group Item Text</p>
+                </a>
+              </div> -->
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        List View</h3>
+                </div>
+                <ul class="list-group">
+                    <a href="#" class="list-group-item" style="color:{{txtColor}};">{{hText}} 0</a>
+                    <a href="#" class="list-group-item" style="color:{{txtColor}};">{{hText}} 1</a>
+                    <a href="#" class="list-group-item" style="color:{{txtColor}};">{{hText}} 2</a>
+                    <a href="#" class="list-group-item" style="color:{{txtColor}};">{{hText}} 3</a>
+                </ul>
+            </div>
+            </div>
+
+       </div>
+      </div>
+
+    </div>
+</div>

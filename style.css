@@ -1,0 +1,283 @@
+/*main template css*/
+.selCom{
+  width: 55% !important;
+    margin-left: 18.4%;
+    margin-top: 1%;
+}
+.bgForm{
+  margin-left: -63%;
+}
+#main{
+  margin-top: 45px;
+}
+/*home template css*/
+#home{
+  margin-top: 72px;
+  background-image: url("../images/phone-case.png");
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+#display{
+  width: 60%;
+  margin-left: 17px;
+  margin-top: 84px;
+}
+
+.logoImage {
+  width: 96px;
+  height: 96px;
+  text-align: right;
+  margin-top: -2%;
+  margin-left: 6px;
+}
+.loginForm {
+  margin-top: 200px;
+}
+#headerImage {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: -2%;
+}
+.rheader {
+  background-color: #2B7EC5;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  /*max-width: 1140px;*/
+  max-width: 332px;
+  height: 84px;
+  margin-bottom: 5px;
+}
+.previewDiv {
+  background-color: #d6d6d6;
+  width: 100%;
+  /*max-width: 1140px;*/
+  max-width: 332px;
+  height: 520px;
+}
+header a {
+  float: left;
+  width: 95px;
+  height: 90px;
+  margin-right: 5px;
+}
+header img {
+ float: right;
+    height: 32px;
+    margin-top: 18%;
+    margin-right: 50px;
+}
+span.glyphicon-list {
+  font-size: 3.2em;
+  color: white;
+}
+
+/*.list-group{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 31px;
+}*/
+
+h2{
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+}
+/*.list-group-item{
+  margin-bottom:15px;
+}*/
+
+/*  Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #headerImage {
+      position: absolute;
+      margin-left: 27%;
+      margin-top: -2%;
+    }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 600px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #headerImage {
+      position: absolute;
+      margin-left: 20%;
+      margin-top: -2%;
+    }
+}
+
+/*header css*/
+body{
+  overflow: hidden;
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color: #4F5457;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 62px;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.ui-yellow-line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffd631;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-left: 1850px;
+  }
+}
+
+/*panel css*/
+.panel-default{
+      width: 90%;
+    margin-left: 5%;
+}
+.panel > .list-group
+{
+    margin-bottom: 0;
+}
+.panel > .list-group .list-group-item
+{
+    border-width: 1px 0;
+}
+.panel > .list-group .list-group-item:first-child
+{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.panel > .list-group .list-group-item:last-child
+{
+    border-bottom: 0;
+}
+.panel-heading + .list-group .list-group-item:first-child
+{
+    border-top-width: 0;
+}
+.panel-default .list-group-item.active
+{
+    color: #000;
+    background-color: #DDD;
+    border-color: #DDD;
+}
+.panel-primary .list-group-item.active
+{
+    color: #FFF;
+    background-color: #428BCA;
+    border-color: #428BCA;
+}
+.panel-success .list-group-item.active
+{
+    color: #3C763D;
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+}
+.panel-info .list-group-item.active
+{
+    color: #31708F;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+}
+.panel-warning .list-group-item.active
+{
+    color: #8A6D3B;
+    background-color: #FCF8E3;
+    border-color: #FAEBCC;
+}
+.panel-danger .list-group-item.active
+{
+    color: #A94442;
+    background-color: #F2DEDE;
+    border-color: #EBCCD1;
+}
+.panel a.list-group-item.active:hover, a.list-group-item.active:focus
+{
+    color: #000;
+    background-color: #DDD;
+    border-color: #DDD;
+}
+
+.brandtitle{
+    margin-left: -3600px;
+    color: white;
+    margin-top: 2px;
+}
+.homeimg{
+  margin-top: -50px;
+}
+.settings{
+  margin-right: 240px;
+}
+
+@media only screen and (max-width:1280px) and (max-height:800px) {
+  .homeimg {
+    margin-top: -50px;
+    margin-right: 700px;
+  }
+}
+
+@media only screen and (max-width:1024px) and (max-height:768px) {
+  .homeimg {
+    margin-top: -50px;
+    margin-right: 975px;
+  }
+  .rheader {
+    background-color: #2B7EC5;
+    color: white;
+    padding: 10px;
+    width: 120%;
+    /*max-width: 1140px;*/
+    max-width: 332px;
+    height: 84px;
+    margin-bottom: 5px;
+  }
+  .previewDiv {
+    background-color: #d6d6d6;
+    width: 120%;
+    /*max-width: 1140px;*/
+    max-width: 332px;
+    height: 520px;
+  }
+}
+@media only screen and (max-width:640px) and (max-height:480px) {
+  .homeimg {
+    margin-top: -50px;
+    margin-right: 1450px;
+  }
+}

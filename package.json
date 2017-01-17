@@ -1,0 +1,25 @@
+{
+  "name": "bg-poc",
+  "version": "0.0.1",
+  "description": "Dynamically changing image and color background",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "socket.io": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node.js",
+    "angularjs",
+    "bootstrap"
+  ],
+  "author": "diwakar",
+  "license": "ISC"
+}
